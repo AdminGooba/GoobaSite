@@ -12,6 +12,11 @@
 }
 
 @layer base {
+  html {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     background-color: #080808;
     color: white;
@@ -19,6 +24,9 @@
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     position: relative;
+    max-width: 100%;
+    overflow-x: hidden;
+    touch-action: pan-y;
   }
 
   /* Subtle noise grain overlay */
