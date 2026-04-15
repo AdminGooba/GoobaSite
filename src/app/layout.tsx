@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Starfield from "@/components/Starfield";
@@ -9,6 +9,13 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export const metadata: Metadata = {
   title: "Gooba | GoBeyond",
@@ -42,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="scroll-smooth">
-      <body className={`${inter.variable} ${inter.className}`}>
+    <html lang="fr" className="scroll-smooth overflow-x-hidden">
+      <body className={`${inter.variable} ${inter.className} overflow-x-hidden`}>
         {/* Primary top glow — gold haze */}
         <div
           aria-hidden="true"
