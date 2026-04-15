@@ -95,7 +95,7 @@ export default function Hero() {
         {/* Heading */}
         <motion.h1
           variants={itemVariants}
-          className={`${montserrat.className} text-[clamp(1.4rem,3.2vw,2.6rem)] font-black tracking-[-0.03em] uppercase leading-[1.08] text-white md:whitespace-nowrap`}
+          className={`${montserrat.className} text-[clamp(0.95rem,3.2vw,2.6rem)] font-black tracking-[-0.03em] uppercase leading-[1.15] text-white md:whitespace-nowrap`}
         >
           L&apos;ACCOMPAGNEMENT SUR-MESURE DÉDIÉ
           <br />
