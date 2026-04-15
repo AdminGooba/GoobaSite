@@ -19,6 +19,20 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: "Gooba",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Gooba - Premium E-Commerce Infrastructure",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gooba | GoBeyond",
+    description: "Gooba déploie des infrastructures e-commerce premium pour artisans. Boostez vos ventes grâce à des solutions sur mesure en acquisition et contenu.",
+    images: ["/og-image.png"],
   },
 };
 
