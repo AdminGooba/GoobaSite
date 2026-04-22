@@ -70,10 +70,10 @@ export default function Hero() {
       >
         {/* GOOBA Title */}
         <motion.div variants={itemVariants} className="flex flex-col items-center gap-3">
-          <div className="flex items-center gap-5">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#a89574]" />
+          <div className="flex items-center gap-3 sm:gap-5">
+            <div className="h-px w-8 sm:w-16 bg-gradient-to-r from-transparent to-[#a89574]" />
             <h2
-              className={`${merriweather.className} text-5xl md:text-6xl lg:text-7xl font-black tracking-[0.3em]`}
+              className={`${merriweather.className} text-5xl md:text-6xl lg:text-7xl font-black tracking-[0.3em] pl-[0.3em]`}
               style={{
                 background: "linear-gradient(135deg, #a89574, #d4c3a3, #e8e1d1, #d4c3a3, #a89574)",
                 WebkitBackgroundClip: "text",
@@ -84,9 +84,9 @@ export default function Hero() {
             >
               GOOBA
             </h2>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#a89574]" />
+            <div className="h-px w-8 sm:w-16 bg-gradient-to-l from-transparent to-[#a89574]" />
           </div>
-          <p className={`${poppins.className} text-[10px] tracking-[0.45em] text-[#a89574] uppercase`}>
+          <p className={`${poppins.className} text-[10px] tracking-[0.45em] text-[#a89574] uppercase pl-[0.45em]`}>
             Agence Digitale Premium
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ export default function Hero() {
         {/* Heading */}
         <motion.h1
           variants={itemVariants}
-          className={`${montserrat.className} text-[clamp(0.95rem,3.2vw,2.6rem)] font-black tracking-[-0.03em] uppercase leading-[1.15] text-white md:whitespace-nowrap`}
+          className={`${montserrat.className} text-[clamp(0.85rem,4vw,2.6rem)] font-black tracking-[-0.03em] uppercase leading-[1.15] text-white md:whitespace-nowrap`}
         >
           L&apos;ACCOMPAGNEMENT SUR-MESURE DÉDIÉ
           <br />
@@ -117,10 +117,10 @@ export default function Hero() {
           variants={itemVariants}
           className={`${poppins.className} flex flex-col gap-1.5 max-w-2xl mx-auto italic uppercase`}
         >
-          <p className="text-sm md:text-base font-bold tracking-[0.14em] text-[#888]">
+          <p className="text-sm md:text-base font-bold tracking-[0.14em] text-[#888] pl-[0.14em] text-center">
             VOTRE SAVOIR-FAIRE, NOTRE STRATÉGIE
           </p>
-          <p className="text-xs md:text-sm font-normal tracking-[0.1em] text-[#555]">
+          <p className="text-xs md:text-sm font-normal tracking-[0.1em] text-[#555] pl-[0.1em] text-center">
             INSCRIRE VOTRE EXCELLENCE DANS L&apos;ÈRE DU DIGITAL
           </p>
         </motion.div>
@@ -153,7 +153,7 @@ export default function Hero() {
                 <span className="text-lg md:text-xl font-bold text-white tracking-tight leading-none">
                   {stat.value}
                 </span>
-                <span className="text-[10px] text-[#555] uppercase tracking-[0.12em] leading-none">
+                <span className="text-[10px] text-[#555] uppercase tracking-[0.12em] leading-none pl-[0.12em] text-center">
                   {stat.label}
                 </span>
               </div>
